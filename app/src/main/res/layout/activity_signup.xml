@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity">
+
+    <ImageView
+        android:id="@+id/homeLogo"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/logo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="78dp"/>
+
+    <EditText
+        android:id="@+id/editFirstName"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/homeLogo"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/edit_background"
+        android:hint="Enter First Name"
+        android:paddingLeft="13dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"/>
+
+
+    <EditText
+        android:id="@+id/editLastName"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/editFirstName"
+        android:layout_marginTop="10dp"
+        android:hint="Enter Last Name"
+        android:paddingLeft="13dp"
+        android:background="@drawable/edit_background"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"/>
+
+    <EditText
+        android:id="@+id/editUserEmail"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/editLastName"
+        android:layout_marginTop="10dp"
+        android:hint="Enter Email Id"
+        android:paddingLeft="13dp"
+        android:background="@drawable/edit_background"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"/>
+
+    <EditText
+        android:id="@+id/editUserPassword"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/editUserEmail"
+        android:layout_marginTop="10dp"
+        android:hint="Enter Password"
+        android:paddingLeft="13dp"
+        android:background="@drawable/edit_background"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"/>
+
+    <EditText
+        android:id="@+id/editUserConfirmPassword"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/editUserPassword"
+        android:layout_marginTop="10dp"
+        android:hint="Confirm Password"
+        android:paddingLeft="13dp"
+        android:background="@drawable/edit_background"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"/>
+
+
+    <Button
+        android:id="@+id/buttonSignup"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editUserConfirmPassword"
+        android:text="Sign Up"
+        android:textSize="20sp"
+        android:textColor="@color/white"
+        android:background="@drawable/button_background"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"/>
+
+
+</RelativeLayout>
